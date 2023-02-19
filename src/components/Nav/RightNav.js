@@ -37,9 +37,9 @@ const Ul = styled.ul`
   }
 `;
 
-function RightNav({open}) {
+function RightNav({open,setOpen}) {
   return (
-    <Ul open={open}>
+    <Ul open={open} onClick={()=>setOpen(false)}>
       <li>Home</li>
       <li>New</li>
       <li>Popular</li>
